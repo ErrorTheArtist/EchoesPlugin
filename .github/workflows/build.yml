@@ -21,10 +21,10 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package
-        working-directory: echoesplugin/echoesplugin
+        working-directory: EchoesPlugin
 
       - name: Upload jar
         uses: actions/upload-artifact@v4
         with:
-          name: PluginJar
-          path: echoesplugin/echoesplugin/target/*.jar
+          name: EchoesPlugin-JAR
+          path: EchoesPlugin/target/*.jar
